@@ -1,16 +1,12 @@
 # Example Markdown
 
-# Title Page
+This is an example of a Markdown file.
 
-This is the first page.
-
-# Second Page
-
-A new page starts here.
+## Features
 
 - You can use **markdown**
 - And apply custom CSS
 
-# Third Page
+## Another Section
 
-Another page!
+You can add more content here!
