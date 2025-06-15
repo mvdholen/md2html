@@ -1,3 +1,9 @@
+"""
+md2html.py
+
+A simple script to convert Markdown files to HTML with optional CSS styling.
+"""
+
 import sys
 import os
 import argparse
@@ -5,6 +11,16 @@ import markdown
 
 
 def md_to_html(md_path, css_path=None):
+    """
+    Convert a Markdown file to an HTML string.
+
+    Args:
+        md_path (str): Path to the Markdown file.
+        css_path (str, optional): Path to a CSS file to include in the HTML. Defaults to None.
+
+    Returns:
+        str: HTML document as a string.
+    """
     with open(md_path, encoding="utf-8") as f:
         md_text = f.read()
     html = markdown.markdown(
@@ -25,6 +41,9 @@ def md_to_html(md_path, css_path=None):
 
 
 def main():
+    """
+    Parse command-line arguments and convert the specified Markdown file to HTML.
+    """
     parser = argparse.ArgumentParser(
         description="Markdown to HTML converter with CSS support."
     )
